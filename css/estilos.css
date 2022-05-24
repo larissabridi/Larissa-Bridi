@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Afterglow-Regular;
+    src: url('Afterglow-Regular.ttf');
+}
+
+:root {
+    /* VARIÁVEIS */
+    --cor_fundo: #ffccd1;
+    --cor_parágrafo: #0ecabc;
+    --cor_título: #000000;
+    --cor_link: #6b005b;
+    --fonte_principal: Afterglow-Regular;
+    --fonte_tamanho: 20px; 
+}
+
+body { 
+    font-family: var(--fonte_principal);
+    background-color: var(--cor_fundo);
+    width: 500px;
+    max-width: 100%;
+    /*0 -> CIMA|BAIXO*/
+    /*AUTO -> ESQUERA|DIREITA*/
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right : auto;
+    margin-top: 0;
+    margin bottom : 0;*/
+    font-size: var(--fonte_tamanho);
+}
+
+div.imagem {text-align: center;}
+
+h1 { 
+    color: var(--cor_título);
+    font-family: var(--fonte_principal);
+}
+
+body p {color: var(--cor_parágrafo);
+        text-align: justify;
+        font-family: var(--fonte_principal);}
+
+ul {padding: 0;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;}
+
+ul li {margin-bottom: 5px;}
+
+ul li a {color: var(--cor_link);
+        text-decoration: none;}
+
+img { 
+    width: 150px;
+    border-radius: 50%;}
